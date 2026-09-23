@@ -1,0 +1,23 @@
+.github/workflows/deploy.yml
+  s_54cb85506c1e0f::t_f42b697125fc97 1-52
+vite.config.ts
+  s_54cb85506c1e0f::t_1d41e9d4ae99cc 6-7
+README.md
+  s_54cb85506c1e0f::t_6935a76838f18f 29-42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "e53e84f8852aed78bfa35f957b7dc5eca71e2c52",
+  "prompts": {},
+  "sessions": {
+    "s_54cb85506c1e0f": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "3a85c013-7758-4183-814a-bb245a7cccec",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Kuba Jaroszewski <jakub.jaroszewski@gmail.com>"
+    }
+  }
+}
