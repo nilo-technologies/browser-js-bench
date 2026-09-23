@@ -26,6 +26,20 @@ npm run lint      # oxlint
 
 `dist/` is a fully static site and can be hosted anywhere. It does not need cross-origin isolation headers.
 
+### Deploying to GitHub Pages
+
+`.github/workflows/deploy.yml` lints, builds and deploys to GitHub Pages on every push to `main`. It can also be run by hand from the Actions tab. One-time setup:
+
+1. Push the repo to GitHub.
+2. Go to **Settings → Pages** and set **Source** to **GitHub Actions**.
+
+The site is published at `https://<user>.github.io/<repo>/`. The workflow gets the right sub-path from `actions/configure-pages` and passes it to Vite as `BASE_PATH`. User/org sites and custom domains get `/`. To reproduce a Pages build locally:
+
+```sh
+BASE_PATH=/<repo>/ npm run build
+BASE_PATH=/<repo>/ npm run preview   # http://localhost:4173/<repo>/
+```
+
 ## Usage
 
 1. **Pick engines.** Any combination of Native, QuickJS and Boa.
